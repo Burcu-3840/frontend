@@ -1,0 +1,172 @@
+.html {
+    box-sizing: border-box;
+}
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.enter { 
+    width: 100%;
+  
+    
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "enter enter enter enter"
+                          "header header header header" 
+                          "menu content content side"
+                          "footer footer footer footer";
+    grid-template-columns:   15%  1fr 1fr 15%;
+    grid-template-rows: 8% 1.2% 50% 8%;
+
+}
+
+#shop {
+    width: 700%;
+    height: 100%;
+   
+}
+ 
+.header {
+    grid-area: header;
+    background-color: rgb(116, 40, 40) ;
+    
+}
+
+.navigation { 
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: beige;
+    padding: 0;
+    margin: 0;
+  
+}
+
+.content { 
+    grid-area: content;
+    background-color: bisque;
+    overflow: scroll;
+    font-size: 2vw;
+
+}
+
+.side {
+    grid-area: side;
+    background-color: beige;
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.5vw;
+
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+    margin: 0;
+    display: flex;
+    padding: 0.2em;
+    justify-content: flex-start;
+}
+
+.navigation  a {
+    text-decoration: none;
+    display: block;
+    padding:1vw;
+    color: white;
+    font-family: cursive;
+    font-size: 2vw;
+
+
+}
+
+.navigation a:hover {
+    background-color: wheat;
+    color:  rgb(116, 40, 40);
+    
+
+}
+
+.navigation li:last-child {
+    margin-left: auto;
+  
+}
+
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding-top: 1vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 0.2vw;
+ 
+
+}
+
+.menu-list a {
+    text-decoration: none;
+    display: block;
+    border: 1px solid black;
+    padding: 1vw;
+    font-family: cursive;
+    font-size: 1.5vw;
+    margin: 0.5vw;
+    border-radius: 2vw;
+
+}
+
+.menu-list a:hover {
+    background-color: rgb(116, 40, 40);
+    color: white;
+}
+
+#kahve2 {
+    width: 30vw;
+    float: right;
+}
+
+#kahve3 {
+    width: 33vw;
+    float: left;
+
+}
+
+h1 {
+    font-size: 5vw;
+    font-family: cursive;
+    text-align: center;
+    
+    
+    
+}
+
+address {
+   margin: auto;
+    color: white;
+}
+
+
+@media screen and (max-width:800px) {
+
+    .container {
+        display: grid;
+        grid-template-areas: "enter enter enter "
+                              "header header header " 
+                              "menu content content "
+                              "footer footer footer ";
+        grid-template-columns:   25% 75%  ;
+        grid-template-rows: 10% 1% 40% 8%;
+    
+    }
+
+
+
+}
